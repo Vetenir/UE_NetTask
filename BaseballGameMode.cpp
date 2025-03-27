@@ -123,7 +123,7 @@ void ABaseballGameMode::ProcessGameInput(APlayerController* FromPlayer, const FS
 
     if (!isValid)
     {
-        // 입력 오류 메시지 분기
+        // 게임 규칙 위반 메시지 분기
         if (!Input.StartsWith("/"))
         {
             BroadcastMessage(TEXT("입력이 '/'로 시작하지 않습니다."));
